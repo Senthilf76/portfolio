@@ -1,0 +1,43 @@
+.projects-section {
+  padding: 60px 300px;
+  text-align: center;
+  position: relative;
+  color: whitesmoke;
+
+  /* Background image */
+  background-image: url('../assets/background.jpg'); /* adjust path as needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* Overlay for better text contrast */
+.projects-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.projects-section > h2,
+.projects-section > .projects {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: auto;
+}
+
+.projects {
+  display: grid;
+  gap: 60px;
+}
+
+.project-card {
+  background-color: rgba(128, 128, 128, 0.8); /* semi-transparent */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  color: whitesmoke;
+}
